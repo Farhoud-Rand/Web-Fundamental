@@ -1,0 +1,50 @@
+
+@font-face { /*To add downloaded font */
+    font-family: 'Roboto-Light'; /* Name the font */
+    src: url('font/Roboto-Light.ttf') format('woff'); /* Specify the font file and its format */
+    font-weight: normal; /* normal', 'bold' */
+    font-style: normal; /* 'normal', 'italic' */
+} 
+
+* {
+    color:white;
+    font-family: 'Roboto-Light', cursive; /* Use the font */
+}
+
+.nav {
+    width: 900px;
+    height: 40px;
+    background-color: rgb(55, 55, 55);
+    display: flex; /* First flex-box */
+    justify-content: space-between; /* According to the question image there is no need to use space-around just put padding */ 
+    padding: 10px 20px;
+    margin: 0 auto;
+    align-items: center; /* Make the header and the list in the center of the Y-axis */
+}
+
+.nav-links {
+    display: flex; /* Second Flex-box */
+    align-items: center; /* To avoid stretching */
+    padding: 10px;
+}
+
+.nav-links li { /* Select the list items inside the navigation only */
+    list-style: none; /* Remove dots */
+    margin-right: 20px; /* Add margin because when I try to use {justify-content: space-evenly} in the .nav-links it didn't make any changes */
+}
+
+.nav-links a { /* Select the links inside the navigation only */
+    text-decoration: none; /* Remove underlines */
+}
+
+.nav-links .btn {
+    color:white;
+    padding: 5px;
+    background-color:rgb(39, 162, 162);
+    border: 3px solid black;
+    box-shadow: 3px 4px black; /* horizontal offset | vertical offset | color */
+ }
+
+ .active:hover{
+    color:blue;
+ }

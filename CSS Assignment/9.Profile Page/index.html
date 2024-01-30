@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!-- Add the following links in order to add new font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!------------------ Navigation Bar ------------------>
+    <nav>
+        <h1> Profile </h1> <!-- Note: it preferred to use h1 just one time in the page -->
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <!-- Note: we use # just for test and we will stay in the same webpage -->
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#" class="active">Find Connections</a></li>
+        </ul>
+        <button class="btn">Sign Out</button>
+    </nav>
+    <main> <!-- Main page under navigation bar and it will be Flex-1 (dirction row) -->
+        <article>
+            <!-- First column in Flex-1 and it will be Flex-2 (dirction column) -->
+            <!------------------ User Card ------------------>
+            <section id="user_card"> <!-- First row in Flex-2 -->
+                <header></header> <!-- Div header to change the background color -->
+                <img id="userImage" src="images/jane-m.jpg" alt="Jana image">
+                <h2>Jana Doe</h2> <!-- User Name -->
+                <img class="icon" src="icons/map-marker.png" alt="map-marker icon">
+                <h3>Seattle</h3> <!-- Location -->
+                <h4 id="h4_1">Developer | Engineer | Problem Solver</h4>
+                <h4 id="h4_2">Maste of Shadows and Internet!</h4>
+                <img class="icon" src="icons/gear.png" alt="gear icon">
+                <a href="#">edit profile</a>
+            </section>
+            <!------------------ Eduction ------------------>
+            <section id="eduction"> <!-- Second row in Flex-2 -->
+                <header>
+                    <h2>Eduction</h2>
+                </header>
+                <p id="p7">Coding Dojo -Full Stack Bootcamp</p>
+                <p id="p8">Dec 2019 - Mar 2020</p>
+                <p id="p9">Triple black belt in Python, MERN, and C#...</p>
+            </section>
+        </article>
+        <!-- Second column in Flex-1 and it will be Flex-3 (dirction column) -->
+        <aside>
+            <!------------------ Requests ------------------>
+            <section id="connection_requests"> <!-- First row in Flex-3 -->
+                <header>
+                    <p id="p3">2</p>
+                    <h2>Connection Requests</h2>
+                </header>
+                <section> <!-- Request #1 -->
+                    <!-- It will be Flex 4 because without flex the element will not be in the same order even if we change margin & padding -->
+                    <img class="personImage" src="images/todd-s.jpg" alt="Todd image">
+                    <h4>Todd E</h4>
+                    <img class="acceptCircle" src="icons/accept-circle.png" alt="accept request">
+                    <img class="acceptCircle" src="icons/close-circle.png" alt="don't accept request">
+                </section>
+                <section> <!-- Request #2 -->
+                    <img class="personImage" src="images/phil-s.jpg" alt="Phil image">
+                    <h4>Phil S</h4>
+                    <img class="acceptCircle" src="icons/accept-circle.png" alt="accept request">
+                    <img class="acceptCircle" src="icons/close-circle.png" alt="don't accept request">
+                </section>
+            </section>
+            <!------------------ Connections ------------------>
+            <section id="your_connections"> <!-- Second row in Flex-3 -->
+                <!-- It will be Flex 5 because without flex the element will not be in the same order even if we change margin & padding -->
+                <header>
+                    <p id="p5">500+</p>
+                    <h2>Your Connection</h2>
+                </header>
+                <section>
+                    <img class="personImage" src="images/adrien-s.jpg" alt="Adrien image">
+                    <h4>Adrien D</h4>
+                </section>
+                <section>
+                    <img class="personImage" src="images/anne-s.jpg" alt="Anne image">
+                    <h4>Anne J</h4>
+                </section>
+                <section>
+                    <img class="personImage" src="images/alayne-s.jpg" alt="Alayne image">
+                    <h4>Alayne T</h4>
+                </section>
+                <section class="person">
+                    <img class="personImage" src="images/arry-s.jpg" alt="Arry image">
+                    <h4>Arry Y</h4>
+                </section>
+                <footer>
+                    <a href="#">View More</a>
+                </footer>
+            </section>
+        </aside>
+    </main>
+</body>

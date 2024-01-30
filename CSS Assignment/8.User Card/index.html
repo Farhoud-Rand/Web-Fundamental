@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+    <!-- Add the following links in order to add new font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style_using_absolute.css"> --> <!-- Use abosolute positions -->
+    <link rel="stylesheet" href="style_using_relative.css"> <!-- Use relative positions -->
+</head>
+
+<body>
+    <div class="container"> <!-- Parent element -->
+        <header></header> <!-- Div header to change the background color -->
+        <img id="userImage" src="icons/user-circle.png" alt="Jana image">
+        <h1>Jana Doe</h1>
+        <div class="row"> <!-- flex-box 1 -->
+            <img class="icon" src="icons/map-marker.png" alt="map-marker icon"> <!-- Column 1 from flex-box 1 -->
+            <p id="p0">Seattle</p> <!-- Column 2 from flex-box 1 -->
+        </div>
+        <p id="p1">Developer | Engineer | Problem Solver</p>
+        <p id="p2">Maste of Shadows and Internet!</p>
+        <div class="row2"> <!-- flex-box 2 -->
+            <img class="icon" src="icons/gear.png" alt="gear icon"> <!-- Column 1 from flex-box 2 -->
+            <a href="#">edit profile</a> <!-- Column 2 from flex-box 2 -->
+        </div>
+    </div>
+</body>
+
+</html>

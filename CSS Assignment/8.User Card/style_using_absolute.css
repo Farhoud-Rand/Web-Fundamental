@@ -1,0 +1,80 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.container {
+    height: 400px;
+    width: 700px;
+    border: 4px solid rgb(205, 205, 205); /* border thickness | border type | border color */
+    border-top: 0px; /* There is no border above header */
+    margin: 50px 0px 0px 120px;
+    position: relative; /* If we want to use absolute position the parent must be relative */
+}
+
+.container header {
+    background-color: rgb(40, 140, 179); 
+    height: 100px;
+    width: 710px;
+    position: relative;/* It will be relative to itself */
+    right: 5px;
+}
+
+#userImage {
+    width: 100px;
+    height: 110px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute; /* It will be relative to its parent (container) */
+    top: 40px;
+    left: 40px;
+    box-shadow: 0 0 0 2px rgb(106, 106, 106); /* X-offset | Y-offset | Bulr Radius | Spread Radious | color */
+}
+
+.container h1 {
+    position: absolute; /* It will be relative to its parent (container) */
+    top: 165px;
+    left: 40px; 
+}
+
+.icon {
+    width: 17px;
+    height: 25px;
+    margin: 5px 20px 5px 0px;
+}
+
+.row, .row2 {
+    display: flex; /* Flex box */
+    align-items: center;
+    justify-content: space-between;
+    position: absolute; /* It will be relative to its parent (container) */
+    top: 215px;
+    left: 50px;
+}
+
+.row2 {
+    top: 340px;
+    left: 50px;    
+}
+
+.container #p0 {
+font-size: 25px;
+}
+
+.container #p1 {
+    position: absolute; /* It will be relative to its parent (container) */
+    top: 270px;
+    left: 50px;
+}
+
+.container #p2 {
+    position: absolute; /* It will be relative to its parent (container) */
+    top: 300px;
+    left: 50px;
+}

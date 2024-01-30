@@ -1,0 +1,271 @@
+/* Reset layout */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**************** Nav Bar ****************/ 
+nav * {
+    color:white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(10, 1, 1);
+    padding: 10px 20px;
+    align-items: center; /* Make the header and the list in the center of the Y-axis */
+    display: flex;
+}
+
+nav h1 {
+    margin: 0px 50px 0px 140px;
+}
+
+.nav-links {
+    display: flex; /* Second Flex-box */
+    align-items: center; /* To avoid stretching */
+    padding: 10px;
+}
+
+.nav-links li { /* Select the list items inside the navigation only */
+    list-style: none; /* Remove dots */
+    margin-right: 20px; /* Add margin because when I try to use {justify-content: space-evenly} in the .nav-links it didn't make any changes */
+}
+
+.nav-links a { /* Select the links inside the navigation only */
+    text-decoration: none; /* Remove underlines */
+}
+
+nav .btn {
+    color:white;
+    padding: 5px;
+    background-color:rgb(39, 162, 162);
+    border: 3px solid black;
+    box-shadow: 3px 4px black; /* horizontal offset | vertical offset | color */
+    margin: 0px 0px 0px 40em;
+}
+
+.active:hover {
+    color:rgb(39, 162, 162);
+}
+
+/**************** User Card ****************/ 
+main{
+    display: flex;
+    padding: 30px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+main article{
+    padding: 20px;
+}
+
+#user_card {
+    height: 400px;
+    width: 530px;
+    border: 4px solid rgb(205, 205, 205); /* border thickness | border type | border color */
+    border-top: 0px; /* There is no border above header */
+    margin: 0px 0px 50px 0px;
+}
+
+#user_card header {
+    background-color: rgb(40, 140, 179); 
+    height: 100px;
+    width: 536px;
+    margin: 0px 0px 0px -3px;
+
+}
+
+#userImage {
+    width: 100px;
+    height: 110px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative; /* It will be relative to itself */
+    top: -55px;
+    left: 40px;
+    box-shadow: 0 0 0 2px rgb(106, 106, 106); /* X-offset | Y-offset | Bulr Radius | Spread Radious | color */
+}
+
+#user_card .icon {
+    display: inline-block;
+    width: 19px;
+    height: 20px;
+    margin: 15px 10px 0px 50px;
+}
+
+#user_card h2 {/* User Name */
+    margin: -45px 0px 0px 50px;
+}
+
+#user_card h3 { /* Location */
+    display: inline-block;
+}
+
+#user_card #h4_1 { /* paragraph sentence 1 */
+    margin: 20px 0px 0px 50px;
+}
+
+#user_card #h4_2 { /* paragraph sentence 2 */
+    margin: 5px 0px 0px 50px;
+}
+
+/**************** Education ****************/ 
+#eduction {
+    height: 190px;
+    width: 530px;
+    border: 4px solid rgb(205, 205, 205); /* border thickness | border type | border color */
+    border-top: 0px; /* There is no border above header */
+    /* margin: 50px 0px 0px 120px; */
+}
+
+#eduction header {
+    background-color: rgb(55, 55, 55); 
+    height: 50px;
+    width: 536px;
+    margin: 0px 0px 0px -3px;
+    color: white;
+}
+
+#eduction h2{ /* Education keyword */
+    padding: 10px;    
+}
+
+#eduction #p7{/* Place of education _coding dojo */
+    font-weight: 700;
+    padding: 15px 0px 0px 15px;  
+    margin: 5px;    
+}
+
+#eduction #p8{ /* Date */
+    padding: 5px 0px 0px 15px;  
+    margin: 5px;  
+    color: rgb(106, 106, 106); 
+    font-weight: 500;
+}
+
+#eduction #p9 {/* Programming languages */
+    font-weight: 500;
+    padding: 5px 0px 15px 15px;  
+    margin: 5px;    
+}
+
+/**************** Requests ****************/
+main aside {
+    padding: 20px;
+}
+
+#connection_requests {
+    height: 200px;
+    width: 300px;
+    border: 4px solid rgb(205, 205, 205); /* border thickness | border type | border color */
+    border-top: 0px; /* There is no border above header */
+    margin: 0px 0px 50px 0px;
+    padding: 0px 15px 15px 15px;
+}
+
+#connection_requests header {
+    background-color: rgb(55, 55, 55); 
+    height: 50px;
+    width: 337px;
+    margin: 0px 0px 0px -18px;
+    color: white;
+    display: flex; /* Flex-box to contain number of requests and Request keyword */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#connection_requests #p3 { /* This is for number of requests */
+    height: 30px;
+    width: 30px;
+    padding: 2px 1px 0px 1px;
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+    margin: 6px 10px 5px 9px;
+    background-color: white;
+    border-radius: 50%;
+    border: 0px solid rgb(214, 214, 214);
+    color: rgb(55, 55, 55);
+}
+
+#connection_requests section {
+    display: flex;
+    align-items: center;
+}
+
+.personImage { 
+    width: 55px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 7px 10px;
+}
+
+#connection_requests h4 {
+    width: 100px;
+    margin: 0px 70px 0px 10px;
+}
+
+#connection_requests .acceptCircle{ 
+    height: 25px;
+    width: 25px;
+    margin: 0px 0px 0px 12px;
+}
+
+/**************** Connections ****************/
+#your_connections {
+    height: 390px;
+    width: 300px;
+    border: 4px solid rgb(205, 205, 205); /* border thickness | border type | border color */
+    border-top: 0px; /* There is no border above header */
+    margin: 0px 0px 0px 0px;
+    padding: 0px 15px 15px 15px;
+}
+
+#your_connections header {
+    background-color: rgb(55, 55, 55); 
+    height: 50px;
+    width: 337px;
+    margin: 0px 0px 0px -18px;
+    color: white;
+    display: flex; /* Flex-box to contain number of requests and Request keyword */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#your_connections #p5{
+    height: 25px;
+    width: 55px;
+    padding: 2px 1px 0px 1px;
+    font-weight: 500;
+    font-size: large;
+    text-align: center;
+    margin: 6px 8px 5px 9px;
+    background-color: white;
+    border-radius: 50%;
+    border: 0px solid rgb(214, 214, 214);
+    color: rgb(55, 55, 55);
+}
+
+#your_connections section{
+    display: flex;
+    align-items: center;
+}
+
+#your_connections h4 {
+    width: 100px;
+    margin: 0px 70px 0px 10px;
+}
+
+#your_connections footer {
+    width: 102%; /* Here I have a problem with width 100% -> the border go out of the container */
+    border-top: 4px solid rgb(205, 205, 205); /* border thickness | border type | border color */    
+    padding: 15px 0px 0px 25px;
+    margin: 0px 0px 0px -15px;
+    font-size: large;
+}

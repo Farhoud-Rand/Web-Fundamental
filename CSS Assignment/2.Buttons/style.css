@@ -1,0 +1,50 @@
+body{
+    /* Add margin for all elements from top and left of the page */
+    margin-top: 50px; 
+    margin-left: 50px;
+}
+
+/* Put the shared attributes in one class --> they have the same type so insted of using class use the element name*/
+button{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#searchButton{
+    color: lightseagreen;
+    background-color: aliceblue ;
+    text-align: center;
+    border: 2px solid lightseagreen;
+    border-radius: 30px;
+    width: 150px;
+    font-size:medium;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#addButton{
+    color: white;
+    background-color: rgb(38, 213, 204);
+    border: 1px solid rgb(38, 213, 204);
+    border-radius: 25%; /* 50% also is possible to make a circle*/
+    font-size:25px;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    /* transform: scale(50%); */
+    /*There is another way to make the button in circle shape: 
+    */
+}
+
+/* #addButton:active{
+    transform: scale(100%);
+} */
+#createAccountButton{
+    color:white;
+    width: 200px;
+    font-size: medium;
+    padding: 3px;
+    background-color:rgb(70, 116, 232);
+    border: 3px solid black;
+    box-shadow: 4px 3px black; /* horizontal offset | vertical offset | color */
+}

@@ -1,0 +1,26 @@
+h1{
+    color: white;
+    background-color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+}
+
+.cyan{
+    color:cyan;
+}
+
+h2{
+    color: white;
+    background-color: rebeccapurple;
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 400;
+}
+
+h3{
+    background-color: rgb(156, 189, 249);
+    text-decoration: underline;
+    text-align: right;
+    font-family:cursive;
+    font-weight: 350;
+}

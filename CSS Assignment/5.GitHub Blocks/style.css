@@ -1,0 +1,47 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    width: 700px;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;/* Make a space between rows */
+    flex-direction: column; /* Make the elements in vertical direction */
+    background-color: rgb(231, 229, 229);
+    padding: 20px;
+    text-align: center; /* Make the title and the paragraph in the middle of the box */  
+    margin: 0 auto;  
+}
+
+img.octocat {
+    height: 200px; /* Make all images with the same size */
+}
+
+h1 {
+    color:rgb(58, 57, 57);
+    margin: 0%;
+}
+
+.row {
+    display: flex; /* Each row will be also a flex box to order the images horizontally */
+    justify-content: space-around; 
+    align-items: center;
+    padding: 20px;
+}
+
+.blue_background {
+    background-color: rgb(154, 196, 233);
+}
+
+.white_background {
+    background-color: white;
+}
+
+.pink_background {
+    background-color:rgb(249, 214, 220);
+}
+
+p{
+    font-size: 20px;
+}
