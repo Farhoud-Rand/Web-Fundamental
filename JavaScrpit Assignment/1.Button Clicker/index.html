@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main 'Flex_box 1 with column direction' -->
+    <main>
+        <!-- Nav bar 'row 1 in flex_box 1'-->
+        <nav>
+            <h1>Dojonary</h1>
+            <input type="text" placeholder="Search">
+            <button onclick="changeText(this)">Login</button> <!-- Add onclick to change the inner-Text using JS -->
+        </nav>
+
+        <div id="row"> <!-- row 2 in flex_box 1 & Flex_box 2 with row direction -->
+            <!-- Article 1 'column 1 in flex_box 2' -->
+            <article>
+                <h2>ninja</h2>
+                <section>
+                    <div class="discrption">
+                        <h3 class="italic">noun</h3>
+                        <h4>Plural: </h4>
+                        <h4 class="italic">ninjas</h4>
+                    </div>
+                    <p>A practitioner skilled in the <br><a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </section>
+                <button id="btn1" onclick="newLike(this)">13 Likes</button>
+                <!-- Add onclick to give alert and change number of likes in JS -->
+            </article>
+
+            <!-- Side Bar 'column 2 in flex_box 2' -->
+            <aside>
+                <h2>Dojonary is <br>define by <span>YOU</span></h2>
+                <button onclick="removeButton(this)">Add Definition</button>
+                <!-- Add onclick to remove button using JS -->
+            </aside>
+        </div>
+
+        <!-- Article 2 'row 3 in flex_box 1'-->
+        <article>
+            <h2>ninja</h2>
+            <section>
+                <div class="discrption">
+                    <h3 class="italic">noun</h3>
+                    <h4>Plural: </h4>
+                    <h4 class="italic">ninjas</h4>
+                </div>
+                <p>A <a href="#">programmer</a> who breakes <br> down problems with <a href="#">zen-</a>like <br>focus
+                </p>
+            </section>
+            <button id="btn2" onclick="newLike(this)">37 Likes</button>
+            <!-- Add onclick to give alert and change number of likes in JS -->
+        </article>
+    </main>
+</body>
+
+</html>
+<script src="script.js"></script>
