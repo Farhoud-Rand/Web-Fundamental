@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta informations -->
+    <title>My first portfolio page!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My first portfolio page">
+</head>
+
+<body>
+    <!-- Heading 1 -->
+    <h1>Rand Farhoud</h1>
+    <img src="rand.jpg" alt="Rand Farhoud image" height="400">
+    <br>
+    <!-- My accounts informations -->
+    <!-- Images and Links for my accounts -->
+    <div style="padding: 10px; margin: 10px;">
+        <img src="github.png" alt="github logo" height="30" width="30">
+        <a href="https://github.com/Farhoud-Rand" style="padding-right: 10px;" target="_blank">my github</a>
+
+        <img src="linkedin.png" alt="linkedin logo" height="30" width="30">
+        <a href="https://www.linkedin.com/in/rand-farhoud-301b64184" style="padding-right: 10px;" target="_blank">my
+            linkedIn</a>
+
+        <img src="email.png" alt="email logo" height="30" width="30">
+        <a href="mailto:r.farhoud2000@gmail.com">My email</a>
+
+    </div>
+
+    <!-- Break line -->
+    <br>
+
+    <!-- Heading 2 -->
+    <h2>Technologies</h2>
+
+    <!-- Table -->
+    <table border="1">
+        <tr>
+            <th>Front-End</th>
+            <th>Python</th>
+            <th>JavaScript</th>
+            <th>Database</th>
+            <th>Concepts</th>
+        </tr>
+
+        <tr>
+            <td>HTML5</td>
+            <td>Dijango</td>
+            <td>Express</td>
+            <td>MySQL</td>
+            <td>AJAX</td>
+        </tr>
+
+        <tr>
+            <td>CSS3</td>
+            <td>Flask</td>
+            <td>Mongoose</td>
+            <td>MongoDB</td>
+            <td>OPP</td>
+        </tr>
+
+        <tr>
+            <td>Bootstrap</td>
+            <td>Unittest</td>
+            <td>React</td>
+            <td></td>
+            <td>REST</td>
+        </tr>
+    </table>
+
+    <br>
+    <!-- Form and input elements -->
+    <h2> Content me</h2>
+    <form action="" method="post">
+        <!-- Name -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <br>
+        <!-- Message -->
+        <!-- We can put them on table -->
+        <!-- <table>
+            <tr>
+                <td>
+                    <p>Massage:</p>
+                </td>
+                <td><textarea name="message" cols="30" rows="10"></textarea></td>
+            </tr>
+        </table> -->
+
+        <!-- Also we can put them on div and use vertical alignment -->
+        <div style="vertical-align: top;">
+            <p style="display: inline-block; vertical-align: top;">Massage:</p>
+            <textarea name="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+
+</html>
