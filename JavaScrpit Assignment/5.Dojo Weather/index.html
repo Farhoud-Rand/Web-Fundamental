@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--*************** Navigation Bar ***************-->
+    <nav>
+        <div class="flex-container">
+            <h1 class="nav-title">DojoWeather</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="active" onclick="printAlert()">Burbank</a></li>
+                <li><a href="#" class="active" onclick="printAlert()">Chicago</a></li>
+                <li><a href="#" class="active" onclick="printAlert()">Dallas</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--*************** City name & temperature unit ***************-->
+    <section class="flex-container">
+        <h2>San Jose</h2>
+        <p>show temperature in <select name="tempUnit" id="tempUnit" onchange="changeTempValues(this)">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select></p>
+    </section>
+    <!--*************** Horizontal Line ***************-->
+    <hr class="horizontalLine">
+    <!--*************** Days weather ***************-->
+    <section id="days" class="flex-container">
+        <article class="weather">
+            <h3>Today</h3>
+            <img src="assets/some_rain.png" alt="rain">
+            <p>some rain</p>
+            <div class="flexTemp">
+                <p class="red temp">24°</p>
+                <p class="blue temp">18°</p>
+            </div>
+        </article>
+
+        <article class="weather">
+            <h3>Tomorrow</h3>
+            <img src="assets/some_sun.png" alt="sun">
+            <p>some sun</p>
+            <div class="flexTemp">
+                <p class="red temp">27°</p>
+                <p class="blue temp">19°</p>
+            </div>
+        </article>
+
+        <article class="weather">
+            <h3>Friday</h3>
+            <img src="assets/some_clouds.png" alt="cloud">
+            <p>some coluds</p>
+            <div class="flexTemp">
+                <p class="red temp">21°</p>
+                <p class="blue temp">16°</p>
+            </div>
+        </article>
+
+        <article class="weather">
+            <h3>Saturday</h3>
+            <img src="assets/some_sun.png" alt="sun">
+            <p>some sun</p>
+            <div class="flexTemp">
+                <p class="red temp">26°</p>
+                <p class="blue temp">21°</p>
+            </div>
+        </article>
+    </section>
+    <!--*************** Cookie ***************-->
+    <section class="flex-container cookie">
+        <img src="assets/cookie.png" alt="cookie">
+        <p>
+            <span>Stop! Cookie time</span><br>We use cookies (sadly not the edible ones) to presonalize content and ads,
+            to provide social media features and to analyse our traffic. <a href="#">Read more...</a>
+        </p>
+        <button class="accept" onclick="hideCookie()">I Accept</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
