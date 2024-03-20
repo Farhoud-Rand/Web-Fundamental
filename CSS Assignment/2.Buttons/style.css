@@ -31,14 +31,8 @@ button{
     height: 40px;
     width: 40px;
     padding: 5px;
-    /* transform: scale(50%); */
-    /*There is another way to make the button in circle shape: 
-    */
 }
 
-/* #addButton:active{
-    transform: scale(100%);
-} */
 #createAccountButton{
     color:white;
     width: 200px;
